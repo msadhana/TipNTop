@@ -1,0 +1,829 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FC433B141CB021AF006EEC16 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC433B131CB021AF006EEC16 /* AppDelegate.swift */; };
+		FC433B161CB021AF006EEC16 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC433B151CB021AF006EEC16 /* ViewController.swift */; };
+		FC433B1C1CB021AF006EEC16 /* TipNTop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FC433B1A1CB021AF006EEC16 /* TipNTop.xcdatamodeld */; };
+		FC433B1E1CB021AF006EEC16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC433B1D1CB021AF006EEC16 /* Assets.xcassets */; };
+		FC433B211CB021AF006EEC16 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC433B1F1CB021AF006EEC16 /* LaunchScreen.storyboard */; };
+		FC433B2C1CB021AF006EEC16 /* TipNTopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC433B2B1CB021AF006EEC16 /* TipNTopTests.swift */; };
+		FC433B371CB021AF006EEC16 /* TipNTopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC433B361CB021AF006EEC16 /* TipNTopUITests.swift */; };
+		FC433B471CB029AA006EEC16 /* TableManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC433B461CB029AA006EEC16 /* TableManager.swift */; };
+		FC45E1F41CBA6F05008734B0 /* pausebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45E1F31CBA6F05008734B0 /* pausebutton.png */; };
+		FC45E1F61CBA72A5008734B0 /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45E1F51CBA72A5008734B0 /* stopbutton.png */; };
+		FC45E1F81CBA77CF008734B0 /* buttonstart.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45E1F71CBA77CF008734B0 /* buttonstart.png */; };
+		FC45E1FC1CBA7CFF008734B0 /* addon.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45E1FB1CBA7CFF008734B0 /* addon.png */; };
+		FC45E1FE1CBA7D9B008734B0 /* discount.png in Resources */ = {isa = PBXBuildFile; fileRef = FC45E1FD1CBA7D9B008734B0 /* discount.png */; };
+		FC45E2031CBABC01008734B0 /* Record.m in Sources */ = {isa = PBXBuildFile; fileRef = FC45E2021CBABC01008734B0 /* Record.m */; };
+		FC938A401CBAD91C00BAD386 /* Records+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938A3E1CBAD91C00BAD386 /* Records+CoreDataProperties.swift */; };
+		FC938A411CBAD91C00BAD386 /* Records.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC938A3F1CBAD91C00BAD386 /* Records.swift */; };
+		FCB1DE701CBBF7AB00C5AC1D /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE6F1CBBF7AB00C5AC1D /* AudioToolbox.framework */; };
+		FCB1DE721CBBF7B200C5AC1D /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE711CBBF7B200C5AC1D /* CFNetwork.framework */; };
+		FCB1DE741CBBF7BA00C5AC1D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE731CBBF7BA00C5AC1D /* CoreGraphics.framework */; };
+		FCB1DE761CBBF7C200C5AC1D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE751CBBF7C200C5AC1D /* CoreLocation.framework */; };
+		FCB1DE781CBBF7C800C5AC1D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE771CBBF7C800C5AC1D /* QuartzCore.framework */; };
+		FCB1DE7A1CBBF7D000C5AC1D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE791CBBF7D000C5AC1D /* Security.framework */; };
+		FCB1DE7C1CBBF7D700C5AC1D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE7B1CBBF7D700C5AC1D /* StoreKit.framework */; };
+		FCB1DE7E1CBBF7DF00C5AC1D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE7D1CBBF7DF00C5AC1D /* SystemConfiguration.framework */; };
+		FCB1DE801CBBF7E700C5AC1D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE7F1CBBF7E700C5AC1D /* libz.tbd */; };
+		FCB1DE821CBBF7F100C5AC1D /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE811CBBF7F100C5AC1D /* libsqlite3.tbd */; };
+		FCB1DE8C1CBBFB7200C5AC1D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE8B1CBBFB7200C5AC1D /* Parse.framework */; };
+		FCB1DE8E1CBC00DC00C5AC1D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE8D1CBC00DC00C5AC1D /* Bolts.framework */; };
+		FCB1DEB01CBCAFD300C5AC1D /* libMailCore-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCB1DE9F1CBCAC6700C5AC1D /* libMailCore-ios.a */; };
+		FCB1DEB31CBCCDD000C5AC1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCB1DEB11CBCCDD000C5AC1D /* Main.storyboard */; };
+		FCB1DEB51CBCCFC400C5AC1D /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB1DEB41CBCCFC400C5AC1D /* email.png */; };
+		FCB1DEB71CBCD01F00C5AC1D /* record_delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB1DEB61CBCD01F00C5AC1D /* record_delete.png */; };
+		FCB1DEB91CBCD0B400C5AC1D /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = FCB1DEB81CBCD0B400C5AC1D /* delete.png */; };
+		FCBFDAE71CC69BD500468013 /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBFDAE61CC69BD500468013 /* temp.swift */; };
+		FCE209031CBA335900C20639 /* CHCSVParser in Resources */ = {isa = PBXBuildFile; fileRef = FCE209021CBA335900C20639 /* CHCSVParser */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FC433B281CB021AF006EEC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC433B081CB021AF006EEC16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC433B0F1CB021AF006EEC16;
+			remoteInfo = TipNTop;
+		};
+		FC433B331CB021AF006EEC16 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FC433B081CB021AF006EEC16 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FC433B0F1CB021AF006EEC16;
+			remoteInfo = TipNTop;
+		};
+		FCB1DE9C1CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA537169E772200778456;
+			remoteInfo = "static mailcore2 osx";
+		};
+		FCB1DE9E1CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BA2C191705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+		FCB1DEA01CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C64EA78C169F259200778456;
+			remoteInfo = tests;
+		};
+		FCB1DEA21CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6A81B911706840C00882C15;
+			remoteInfo = "test-ios";
+		};
+		FCB1DEA41CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6BD288D170BD71100A91AC1;
+			remoteInfo = "mailcore osx";
+		};
+		FCB1DEA61CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 27780C3A19CF9CD100C77E44;
+			remoteInfo = "mailcore ios";
+		};
+		FCB1DEA81CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C6B5AE0219F630B3001352A6;
+			remoteInfo = unittest;
+		};
+		FCB1DEAA1CBCAC6700C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C600B6141A242C3F000728F1;
+			remoteInfo = unittestcpp;
+		};
+		FCB1DEAE1CBCAFB800C5AC1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C6BA2B091705F4E6003F0E9E;
+			remoteInfo = "static mailcore2 ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FC433B101CB021AF006EEC16 /* TipNTop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipNTop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC433B131CB021AF006EEC16 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FC433B151CB021AF006EEC16 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FC433B1B1CB021AF006EEC16 /* TipNTop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TipNTop.xcdatamodel; sourceTree = "<group>"; };
+		FC433B1D1CB021AF006EEC16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FC433B201CB021AF006EEC16 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FC433B221CB021AF006EEC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC433B271CB021AF006EEC16 /* TipNTopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipNTopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC433B2B1CB021AF006EEC16 /* TipNTopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipNTopTests.swift; sourceTree = "<group>"; };
+		FC433B2D1CB021AF006EEC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC433B321CB021AF006EEC16 /* TipNTopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TipNTopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC433B361CB021AF006EEC16 /* TipNTopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipNTopUITests.swift; sourceTree = "<group>"; };
+		FC433B381CB021AF006EEC16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC433B461CB029AA006EEC16 /* TableManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableManager.swift; sourceTree = "<group>"; };
+		FC45E1F31CBA6F05008734B0 /* pausebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pausebutton.png; path = ../../Documents/pausebutton.png; sourceTree = "<group>"; };
+		FC45E1F51CBA72A5008734B0 /* stopbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopbutton.png; path = ../../Documents/stopbutton.png; sourceTree = "<group>"; };
+		FC45E1F71CBA77CF008734B0 /* buttonstart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonstart.png; path = ../../Documents/buttonstart.png; sourceTree = "<group>"; };
+		FC45E1FB1CBA7CFF008734B0 /* addon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = addon.png; path = ../../Downloads/addon.png; sourceTree = "<group>"; };
+		FC45E1FD1CBA7D9B008734B0 /* discount.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = discount.png; path = ../../Downloads/discount.png; sourceTree = "<group>"; };
+		FC45E2011CBABC01008734B0 /* TipNTop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TipNTop-Bridging-Header.h"; sourceTree = "<group>"; };
+		FC45E2021CBABC01008734B0 /* Record.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Record.m; sourceTree = "<group>"; };
+		FC938A3E1CBAD91C00BAD386 /* Records+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Records+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FC938A3F1CBAD91C00BAD386 /* Records.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Records.swift; sourceTree = "<group>"; };
+		FCB1DE6F1CBBF7AB00C5AC1D /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		FCB1DE711CBBF7B200C5AC1D /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		FCB1DE731CBBF7BA00C5AC1D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FCB1DE751CBBF7C200C5AC1D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FCB1DE771CBBF7C800C5AC1D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		FCB1DE791CBBF7D000C5AC1D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		FCB1DE7B1CBBF7D700C5AC1D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FCB1DE7D1CBBF7DF00C5AC1D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		FCB1DE7F1CBBF7E700C5AC1D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		FCB1DE811CBBF7F100C5AC1D /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		FCB1DE8B1CBBFB7200C5AC1D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		FCB1DE8D1CBC00DC00C5AC1D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mailcore2.xcodeproj; path = "mailcore2-master/build-mac/mailcore2.xcodeproj"; sourceTree = "<group>"; };
+		FCB1DEB21CBCCDD000C5AC1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCB1DEB41CBCCFC400C5AC1D /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		FCB1DEB61CBCD01F00C5AC1D /* record_delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = record_delete.png; sourceTree = "<group>"; };
+		FCB1DEB81CBCD0B400C5AC1D /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		FCBFDAE61CC69BD500468013 /* temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+		FCE209021CBA335900C20639 /* CHCSVParser */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CHCSVParser; path = "../../../Downloads/CHCSVParser-master/CHCSVParser"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FC433B0D1CB021AF006EEC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB1DEB01CBCAFD300C5AC1D /* libMailCore-ios.a in Frameworks */,
+				FCB1DE821CBBF7F100C5AC1D /* libsqlite3.tbd in Frameworks */,
+				FCB1DE801CBBF7E700C5AC1D /* libz.tbd in Frameworks */,
+				FCB1DE7E1CBBF7DF00C5AC1D /* SystemConfiguration.framework in Frameworks */,
+				FCB1DE8E1CBC00DC00C5AC1D /* Bolts.framework in Frameworks */,
+				FCB1DE7C1CBBF7D700C5AC1D /* StoreKit.framework in Frameworks */,
+				FCB1DE7A1CBBF7D000C5AC1D /* Security.framework in Frameworks */,
+				FCB1DE781CBBF7C800C5AC1D /* QuartzCore.framework in Frameworks */,
+				FCB1DE8C1CBBFB7200C5AC1D /* Parse.framework in Frameworks */,
+				FCB1DE761CBBF7C200C5AC1D /* CoreLocation.framework in Frameworks */,
+				FCB1DE741CBBF7BA00C5AC1D /* CoreGraphics.framework in Frameworks */,
+				FCB1DE721CBBF7B200C5AC1D /* CFNetwork.framework in Frameworks */,
+				FCB1DE701CBBF7AB00C5AC1D /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B241CB021AF006EEC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B2F1CB021AF006EEC16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC433B071CB021AF006EEC16 = {
+			isa = PBXGroup;
+			children = (
+				FCB1DEB81CBCD0B400C5AC1D /* delete.png */,
+				FCB1DEB61CBCD01F00C5AC1D /* record_delete.png */,
+				FCB1DEB41CBCCFC400C5AC1D /* email.png */,
+				FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */,
+				FCB1DE8D1CBC00DC00C5AC1D /* Bolts.framework */,
+				FCB1DE8B1CBBFB7200C5AC1D /* Parse.framework */,
+				FCB1DE811CBBF7F100C5AC1D /* libsqlite3.tbd */,
+				FCB1DE7F1CBBF7E700C5AC1D /* libz.tbd */,
+				FCB1DE7D1CBBF7DF00C5AC1D /* SystemConfiguration.framework */,
+				FCB1DE7B1CBBF7D700C5AC1D /* StoreKit.framework */,
+				FCB1DE791CBBF7D000C5AC1D /* Security.framework */,
+				FCB1DE771CBBF7C800C5AC1D /* QuartzCore.framework */,
+				FCB1DE751CBBF7C200C5AC1D /* CoreLocation.framework */,
+				FCB1DE731CBBF7BA00C5AC1D /* CoreGraphics.framework */,
+				FCB1DE711CBBF7B200C5AC1D /* CFNetwork.framework */,
+				FCB1DE6F1CBBF7AB00C5AC1D /* AudioToolbox.framework */,
+				FC938A3E1CBAD91C00BAD386 /* Records+CoreDataProperties.swift */,
+				FC938A3F1CBAD91C00BAD386 /* Records.swift */,
+				FC45E1FD1CBA7D9B008734B0 /* discount.png */,
+				FC45E1FB1CBA7CFF008734B0 /* addon.png */,
+				FC45E1F71CBA77CF008734B0 /* buttonstart.png */,
+				FC45E1F51CBA72A5008734B0 /* stopbutton.png */,
+				FC45E1F31CBA6F05008734B0 /* pausebutton.png */,
+				FC433B121CB021AF006EEC16 /* TipNTop */,
+				FC433B2A1CB021AF006EEC16 /* TipNTopTests */,
+				FC433B351CB021AF006EEC16 /* TipNTopUITests */,
+				FC433B111CB021AF006EEC16 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FC433B111CB021AF006EEC16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC433B101CB021AF006EEC16 /* TipNTop.app */,
+				FC433B271CB021AF006EEC16 /* TipNTopTests.xctest */,
+				FC433B321CB021AF006EEC16 /* TipNTopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FC433B121CB021AF006EEC16 /* TipNTop */ = {
+			isa = PBXGroup;
+			children = (
+				FCB1DEB11CBCCDD000C5AC1D /* Main.storyboard */,
+				FCE209021CBA335900C20639 /* CHCSVParser */,
+				FC433B131CB021AF006EEC16 /* AppDelegate.swift */,
+				FC433B151CB021AF006EEC16 /* ViewController.swift */,
+				FC433B1D1CB021AF006EEC16 /* Assets.xcassets */,
+				FC433B1F1CB021AF006EEC16 /* LaunchScreen.storyboard */,
+				FC433B221CB021AF006EEC16 /* Info.plist */,
+				FC433B1A1CB021AF006EEC16 /* TipNTop.xcdatamodeld */,
+				FC433B461CB029AA006EEC16 /* TableManager.swift */,
+				FC45E2021CBABC01008734B0 /* Record.m */,
+				FC45E2011CBABC01008734B0 /* TipNTop-Bridging-Header.h */,
+				FCBFDAE61CC69BD500468013 /* temp.swift */,
+			);
+			path = TipNTop;
+			sourceTree = "<group>";
+		};
+		FC433B2A1CB021AF006EEC16 /* TipNTopTests */ = {
+			isa = PBXGroup;
+			children = (
+				FC433B2B1CB021AF006EEC16 /* TipNTopTests.swift */,
+				FC433B2D1CB021AF006EEC16 /* Info.plist */,
+			);
+			path = TipNTopTests;
+			sourceTree = "<group>";
+		};
+		FC433B351CB021AF006EEC16 /* TipNTopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FC433B361CB021AF006EEC16 /* TipNTopUITests.swift */,
+				FC433B381CB021AF006EEC16 /* Info.plist */,
+			);
+			path = TipNTopUITests;
+			sourceTree = "<group>";
+		};
+		FCB1DE921CBCAC6600C5AC1D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCB1DE9D1CBCAC6700C5AC1D /* libMailCore.a */,
+				FCB1DE9F1CBCAC6700C5AC1D /* libMailCore-ios.a */,
+				FCB1DEA11CBCAC6700C5AC1D /* tests */,
+				FCB1DEA31CBCAC6700C5AC1D /* test-ios.app */,
+				FCB1DEA51CBCAC6700C5AC1D /* MailCore.framework */,
+				FCB1DEA71CBCAC6700C5AC1D /* MailCore.framework */,
+				FCB1DEA91CBCAC6700C5AC1D /* unittest.xctest */,
+				FCB1DEAB1CBCAC6700C5AC1D /* unittestcpp */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FC433B0F1CB021AF006EEC16 /* TipNTop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC433B3B1CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTop" */;
+			buildPhases = (
+				FC433B0C1CB021AF006EEC16 /* Sources */,
+				FC433B0D1CB021AF006EEC16 /* Frameworks */,
+				FC433B0E1CB021AF006EEC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FCB1DEAF1CBCAFB800C5AC1D /* PBXTargetDependency */,
+			);
+			name = TipNTop;
+			productName = TipNTop;
+			productReference = FC433B101CB021AF006EEC16 /* TipNTop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FC433B261CB021AF006EEC16 /* TipNTopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC433B3E1CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTopTests" */;
+			buildPhases = (
+				FC433B231CB021AF006EEC16 /* Sources */,
+				FC433B241CB021AF006EEC16 /* Frameworks */,
+				FC433B251CB021AF006EEC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC433B291CB021AF006EEC16 /* PBXTargetDependency */,
+			);
+			name = TipNTopTests;
+			productName = TipNTopTests;
+			productReference = FC433B271CB021AF006EEC16 /* TipNTopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FC433B311CB021AF006EEC16 /* TipNTopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC433B411CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTopUITests" */;
+			buildPhases = (
+				FC433B2E1CB021AF006EEC16 /* Sources */,
+				FC433B2F1CB021AF006EEC16 /* Frameworks */,
+				FC433B301CB021AF006EEC16 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FC433B341CB021AF006EEC16 /* PBXTargetDependency */,
+			);
+			name = TipNTopUITests;
+			productName = TipNTopUITests;
+			productReference = FC433B321CB021AF006EEC16 /* TipNTopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FC433B081CB021AF006EEC16 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sadhana Maniarasu";
+				TargetAttributes = {
+					FC433B0F1CB021AF006EEC16 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = EC2KQM9R4Y;
+					};
+					FC433B261CB021AF006EEC16 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FC433B0F1CB021AF006EEC16;
+					};
+					FC433B311CB021AF006EEC16 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = FC433B0F1CB021AF006EEC16;
+					};
+				};
+			};
+			buildConfigurationList = FC433B0B1CB021AF006EEC16 /* Build configuration list for PBXProject "TipNTop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FC433B071CB021AF006EEC16;
+			productRefGroup = FC433B111CB021AF006EEC16 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FCB1DE921CBCAC6600C5AC1D /* Products */;
+					ProjectRef = FCB1DE911CBCAC6600C5AC1D /* mailcore2.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				FC433B0F1CB021AF006EEC16 /* TipNTop */,
+				FC433B261CB021AF006EEC16 /* TipNTopTests */,
+				FC433B311CB021AF006EEC16 /* TipNTopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		FCB1DE9D1CBCAC6700C5AC1D /* libMailCore.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libMailCore.a;
+			remoteRef = FCB1DE9C1CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DE9F1CBCAC6700C5AC1D /* libMailCore-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libMailCore-ios.a";
+			remoteRef = FCB1DE9E1CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEA11CBCAC6700C5AC1D /* tests */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = tests;
+			remoteRef = FCB1DEA01CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEA31CBCAC6700C5AC1D /* test-ios.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "test-ios.app";
+			remoteRef = FCB1DEA21CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEA51CBCAC6700C5AC1D /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = FCB1DEA41CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEA71CBCAC6700C5AC1D /* MailCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = MailCore.framework;
+			remoteRef = FCB1DEA61CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEA91CBCAC6700C5AC1D /* unittest.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = unittest.xctest;
+			remoteRef = FCB1DEA81CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		FCB1DEAB1CBCAC6700C5AC1D /* unittestcpp */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = unittestcpp;
+			remoteRef = FCB1DEAA1CBCAC6700C5AC1D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FC433B0E1CB021AF006EEC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCB1DEB91CBCD0B400C5AC1D /* delete.png in Resources */,
+				FC45E1F61CBA72A5008734B0 /* stopbutton.png in Resources */,
+				FC45E1FC1CBA7CFF008734B0 /* addon.png in Resources */,
+				FC433B211CB021AF006EEC16 /* LaunchScreen.storyboard in Resources */,
+				FC45E1FE1CBA7D9B008734B0 /* discount.png in Resources */,
+				FC45E1F41CBA6F05008734B0 /* pausebutton.png in Resources */,
+				FCB1DEB71CBCD01F00C5AC1D /* record_delete.png in Resources */,
+				FCE209031CBA335900C20639 /* CHCSVParser in Resources */,
+				FCB1DEB31CBCCDD000C5AC1D /* Main.storyboard in Resources */,
+				FC433B1E1CB021AF006EEC16 /* Assets.xcassets in Resources */,
+				FCB1DEB51CBCCFC400C5AC1D /* email.png in Resources */,
+				FC45E1F81CBA77CF008734B0 /* buttonstart.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B251CB021AF006EEC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B301CB021AF006EEC16 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FC433B0C1CB021AF006EEC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC45E2031CBABC01008734B0 /* Record.m in Sources */,
+				FC938A411CBAD91C00BAD386 /* Records.swift in Sources */,
+				FC433B471CB029AA006EEC16 /* TableManager.swift in Sources */,
+				FCBFDAE71CC69BD500468013 /* temp.swift in Sources */,
+				FC433B161CB021AF006EEC16 /* ViewController.swift in Sources */,
+				FC433B141CB021AF006EEC16 /* AppDelegate.swift in Sources */,
+				FC938A401CBAD91C00BAD386 /* Records+CoreDataProperties.swift in Sources */,
+				FC433B1C1CB021AF006EEC16 /* TipNTop.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B231CB021AF006EEC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC433B2C1CB021AF006EEC16 /* TipNTopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC433B2E1CB021AF006EEC16 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC433B371CB021AF006EEC16 /* TipNTopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FC433B291CB021AF006EEC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC433B0F1CB021AF006EEC16 /* TipNTop */;
+			targetProxy = FC433B281CB021AF006EEC16 /* PBXContainerItemProxy */;
+		};
+		FC433B341CB021AF006EEC16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FC433B0F1CB021AF006EEC16 /* TipNTop */;
+			targetProxy = FC433B331CB021AF006EEC16 /* PBXContainerItemProxy */;
+		};
+		FCB1DEAF1CBCAFB800C5AC1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "static mailcore2 ios";
+			targetProxy = FCB1DEAE1CBCAFB800C5AC1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FC433B1F1CB021AF006EEC16 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC433B201CB021AF006EEC16 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCB1DEB11CBCCDD000C5AC1D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCB1DEB21CBCCDD000C5AC1D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FC433B391CB021AF006EEC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC433B3A1CB021AF006EEC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FC433B3C1CB021AF006EEC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				"HEADER_SEARCH_PATHS[arch=*]" = "/Users/msadhana/Desktop/TipNTop/**";
+				INFOPLIST_FILE = TipNTop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = (
+					"-lctemplate-ios",
+					"-letpan-ios",
+					"-lxml2",
+					"-lsasl2",
+					"-liconv",
+					"-ltidy",
+					"-lz",
+					"-lc++",
+					"-lresolv",
+					"-stdlib=libc++",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TipNTop/TipNTop-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FC433B3D1CB021AF006EEC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libstdc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = "/Users/msadhana/Desktop/TipNTop/**";
+				INFOPLIST_FILE = TipNTop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "TipNTop/TipNTop-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FC433B3F1CB021AF006EEC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TipNTopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipNTop.app/TipNTop";
+			};
+			name = Debug;
+		};
+		FC433B401CB021AF006EEC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TipNTopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TipNTop.app/TipNTop";
+			};
+			name = Release;
+		};
+		FC433B421CB021AF006EEC16 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TipNTopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TipNTop;
+			};
+			name = Debug;
+		};
+		FC433B431CB021AF006EEC16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TipNTopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = TipNTop.TipNTopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TipNTop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FC433B0B1CB021AF006EEC16 /* Build configuration list for PBXProject "TipNTop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC433B391CB021AF006EEC16 /* Debug */,
+				FC433B3A1CB021AF006EEC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC433B3B1CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC433B3C1CB021AF006EEC16 /* Debug */,
+				FC433B3D1CB021AF006EEC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC433B3E1CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC433B3F1CB021AF006EEC16 /* Debug */,
+				FC433B401CB021AF006EEC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC433B411CB021AF006EEC16 /* Build configuration list for PBXNativeTarget "TipNTopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FC433B421CB021AF006EEC16 /* Debug */,
+				FC433B431CB021AF006EEC16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FC433B1A1CB021AF006EEC16 /* TipNTop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FC433B1B1CB021AF006EEC16 /* TipNTop.xcdatamodel */,
+			);
+			currentVersion = FC433B1B1CB021AF006EEC16 /* TipNTop.xcdatamodel */;
+			path = TipNTop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FC433B081CB021AF006EEC16 /* Project object */;
+}
